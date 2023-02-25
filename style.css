@@ -1,0 +1,23 @@
+ul {
+  list-style: none;
+}
+
+iframe {
+  width: 1000px;
+  height: 700px;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.item {
+  width: calc((100% - 180px) / 4);
+  height: 800px;
+}
+
+.test {
+  cursor: pointer;
+}
