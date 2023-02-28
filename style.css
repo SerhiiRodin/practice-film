@@ -14,8 +14,13 @@ iframe {
 }
 
 .item {
-  width: calc((100% - 180px) / 4);
-  height: 800px;
+  /* width: calc((100% - 180px) / 4); */
+  /* height: 800px; */
+}
+
+img {
+  width: 439px;
+  object-fit: cover;
 }
 
 .test {

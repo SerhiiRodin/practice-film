@@ -62,6 +62,8 @@ function createCard(arr) {
 }
 
 function onClick(e) {
+  // if (e.target.nodeName === "IMG") {} условие клика по картинке
+  // условие клика на эл. которые имеют класс test
   if (e.target.classList.contains("test")) {
     const item = e.target.closest("li");
     const { id } = item.dataset;
