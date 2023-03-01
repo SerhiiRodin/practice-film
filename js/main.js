@@ -103,3 +103,21 @@ function callback(entries) {
     });
   }
 }
+
+const link = `media-metadata`;
+
+fetch(
+  `https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=MaRHlqb5GkKZRi8GP7IZNIuwteQG5wDA`
+)
+  .then((res) => res.json())
+  .then(({ results }) => {
+    const filter = results.find((result) => results.section === "Business");
+
+    console.log(filter);
+
+    console.log(results);
+    console.log(results[0].media[0]);
+    console.log(results[0].media[0][link][0].url);
+    console.log(results[0].media[0][link][1].url);
+    console.log(results[0].media[0][link][2].url);
+  });
